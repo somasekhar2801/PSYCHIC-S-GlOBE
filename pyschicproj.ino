@@ -1,6 +1,6 @@
-#define RED 6
-#define GREEN 10
-#define BLUE 3
+#define RED 3
+#define GREEN 6
+#define BLUE 9
 const int trigPin = 5;    // Trigger to arduino pin 4
 const int echoPin = 4;   // Echo to arduino pin 5
 long duration, cm;
@@ -80,81 +80,81 @@ void loop() {
    for(i=0;i<256;i++)//RED LED brightness increases
    {
     analogWrite(RED,i);
-    delay(3);
+    delay(1);
    }
    for(i=255;i>=0;i--)//RED LED brightness decreases
    {
     analogWrite(RED,i);
-    delay(3);
+    delay(1);
    }
-   delay(10);//break
+   delay(5);//break
    for(i=0;i<256;i++)//RED and GREEN LED brightness increases
    {
     analogWrite(RED,i);
     analogWrite(GREEN,i);
-    delay(3);
+    delay(1);
    }
    for(i=255;i>=0;i--)//RED and GREEN LED brightness decreases
    {
     analogWrite(RED,i);
     analogWrite(GREEN,i);
-    delay(3);
+    delay(1);
    }
-   delay(10);//break
+   delay(5);//break
    for(i=0;i<256;i++)//RED,GREEN and BLUE LED brightness increases
    {
     analogWrite(RED,i);
     analogWrite(GREEN,i);
     analogWrite(BLUE,i);
-    delay(3);
+    delay(1);
    }
    for(i=255;i>=0;i--)//RED,GREEN and BLUE LED brightness decreases
    {
     analogWrite(RED,i);
     analogWrite(GREEN,i);
     analogWrite(BLUE,i);
-    delay(3);
+    delay(1);
    }
-   delay(10);//BREAK
+   delay(5);//BREAK
    for(i=0;i<256;i++)//RED,GREEN and BLUE LED brightness increases
    {
     analogWrite(RED,i);
     analogWrite(GREEN,i);
     analogWrite(BLUE,i);
-    delay(3);
+    delay(1);
    }
    for(i=255;i>=0;i--)//RED,GREEN and BLUE LED brightness decreases
    {
     analogWrite(RED,i);
     analogWrite(GREEN,i);
     analogWrite(BLUE,i);
-    delay(3);
+    delay(1);
    }
-   delay(10);//break
+   delay(5);//break
    for(i=0;i<256;i++)//RED and GREEN LED brightness increases
    {
     analogWrite(RED,i);
     analogWrite(GREEN,i);
-    delay(3);
+    delay(1);
    }
    for(i=255;i>=0;i--)//RED and GREEN LED brightness decreases
    {
     analogWrite(RED,i);
     analogWrite(GREEN,i);
-    delay(3);
+    delay(1);
    }
-   delay(10);//break
+   delay(5);//break
    for(i=0;i<256;i++)//RED LED brightness increases
    {
     analogWrite(RED,i);
-    delay(3);
+    delay(1);
    }
    for(i=255;i>=0;i--)//RED LED brightness decreases
    {
     analogWrite(RED,i);
-    delay(3);
+    delay(1);
    }
-   delay(10);//BREAK
+   delay(5);//BREAK
  }
  else if(20<cm&&cm<=30)
   {
@@ -164,17 +164,17 @@ void loop() {
    analogWrite(RED,i);
    analogWrite(GREEN,i);
    analogWrite(BLUE,i);
-   delay(5);
+   delay(1);
   }
-  delay(50);
+  delay(10);
   for(i=255;i>=0;i--)//All LEDs brightness decreases
   {
   analogWrite(RED,i);
   analogWrite(GREEN,i);
   analogWrite(BLUE,i);
-  delay(5);
+  delay(1);
  }
- delay(20);
+ delay(15);
     }
      else if(30<cm&&cm<=40)
      {
@@ -182,32 +182,32 @@ void loop() {
  for(r=0;r<256;r++)//RED LED brightness increases
  {
   analogWrite(RED,r);
-  delay(3);
+  delay(1);
  }
  for(g=0;g<256;g++)//GREEN LED brightness increases
  {
   analogWrite(GREEN,g);
-  delay(3);
+  delay(1);
  }
  for(b=0;b<256;b++)//BLUE LED brightness increases
  {
   analogWrite(BLUE,b);
-  delay(3);
+  delay(1);
  }
  for(r=255;r>=0;r--)//RED LED brightness decreases
  {
   analogWrite(RED,r);
-  delay(3);
+  delay(1);
  }
   for(g=255;g>=0;g--)//GREEN LED brightness decreases
  {
   analogWrite(GREEN,g);
-  delay(3);
+  delay(1);
  }
  for(b=255;b>=0;b--)//BLUE LED brightness decreases
  {
   analogWrite(BLUE,b);
-  delay(3);
+  delay(1);
  }
      }
  else if(40<cm&&cm<=50)
@@ -259,34 +259,34 @@ void loop() {
     for(r=0;r<256;r++)//RED LED brightness increases
     {
       analogWrite(RED,r);
-      delay(3);
+      delay(1);
  
      }
     for(r=255;r>=0;r--)//RED LED brightness decreases
      {
       analogWrite(RED,r);
-      delay(3);
+      delay(1);
      }
     for(g=0;g<256;g++)//GREEN LED brightness increases
      {
       analogWrite(GREEN,g);
-      delay(3);
+      delay(1);
      }
     for(g=255;g>=0;g--)//GREEN LED brightness decreases
      {
       analogWrite(GREEN,g);
-      delay(3);
+      delay(1);
      }
     for(b=0;b<256;b++)//BLUE LED brightness increases
      {
     
        analogWrite(BLUE,b);
-      delay(3);
+      delay(1);
      }
     for(b=255;b>=0;b--)//BLUE LED brightness decreases
     {
       analogWrite(BLUE,b);
-      delay(3);
+      delay(1);
     }
  }
  else if(60<cm&&cm<=70)
